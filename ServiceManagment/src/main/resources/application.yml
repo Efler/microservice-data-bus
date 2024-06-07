@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/data_bus}
+    username: ${DB_USERNAME:eflerrr}
+    password: ${DB_PASSWORD:45678}
+    driver-class-name: org.postgresql.Driver
+  application:
+    name: data-bus
+  liquibase:
+    enabled: false
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include:
+          - info
+          - health
+          - metrics

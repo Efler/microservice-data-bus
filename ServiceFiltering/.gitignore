@@ -1,0 +1,9 @@
+/.idea/
+/.gradle/
+/gradle/
+gradlew
+gradlew.bat
+docker-compose.yml
+/build/
+todo.txt
+/docker-volumes/
