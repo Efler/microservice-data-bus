@@ -75,21 +75,21 @@
 * `is_active`: вкл/выкл правила
 
 **Configuration**:
-* `DB_URL`: JDBC-URL базы данных с правилами фильтрации
+* `DB_URL`: JDBC-URL базы данных с правилами дедубликации
 * `DB_USER`: имя пользователя базы данных
 * `DB_PASSWORD`: пароль базы данных
 * `KAFKA_CONSUMER_BOOTSTRAP_SERVERS`: URL для подключения к Kafka
 * `KAFKA_CONSUMER_CLIENT_ID`: id клиента-консьюмера Kafka
 * `KAFKA_CONSUMER_GROUP_ID`: id группы консьюмеров Kafka
 * `KAFKA_CONSUMER_AUTO_OFFSET_RESET`: сдвиг для чтения из топика Kafka
-* `KAFKA_CONSUMER_TOPIC`: входной топик Kafka для фильтрации
+* `KAFKA_CONSUMER_TOPIC`: входной топик Kafka для дедубликации
 * `KAFKA_PRODUCER_BOOTSTRAP_SERVERS`: URL для подключения к Kafka
 * `KAFKA_PRODUCER_CLIENT_ID`: id клиента-продюсера Kafka
 * `KAFKA_PRODUCER_ACKS`: фактор подтверждения отправки от брокеров Kafka
-* `KAFKA_PRODUCER_TOPIC`: выходной топик Kafka после фильтрации
+* `KAFKA_PRODUCER_TOPIC`: выходной топик Kafka после дедубликации
 * `REDIS_HOST`: хост для подключения к Redis
 * `REDIS_PORT`: порт для подключения к Redis
-* `UPDATE_INTERVAL_SEC`: интервал чтения правил фильтрации из базы данных
+* `UPDATE_INTERVAL_SEC`: интервал чтения правил дедубликации из базы данных
 
 
 ## _**Enrichment**_
@@ -107,23 +107,23 @@
 * `field_default_value`: значение по умолчанию, если значение для обогащения не найдено в MongoDB
 
 **Configuration**:
-* `DB_URL`: JDBC-URL базы данных с правилами фильтрации
+* `DB_URL`: JDBC-URL базы данных с правилами обогащения
 * `DB_USER`: имя пользователя базы данных
 * `DB_PASSWORD`: пароль базы данных
 * `KAFKA_CONSUMER_BOOTSTRAP_SERVERS`: URL для подключения к Kafka
 * `KAFKA_CONSUMER_CLIENT_ID`: id клиента-консьюмера Kafka
 * `KAFKA_CONSUMER_GROUP_ID`: id группы консьюмеров Kafka
 * `KAFKA_CONSUMER_AUTO_OFFSET_RESET`: сдвиг для чтения из топика Kafka
-* `KAFKA_CONSUMER_TOPIC`: входной топик Kafka для фильтрации
+* `KAFKA_CONSUMER_TOPIC`: входной топик Kafka для обогащения
 * `KAFKA_PRODUCER_BOOTSTRAP_SERVERS`: URL для подключения к Kafka
 * `KAFKA_PRODUCER_CLIENT_ID`: id клиента-продюсера Kafka
 * `KAFKA_PRODUCER_ACKS`: фактор подтверждения отправки от брокеров Kafka
-* `KAFKA_PRODUCER_TOPIC`: выходной топик Kafka после фильтрации
+* `KAFKA_PRODUCER_TOPIC`: выходной топик Kafka после обогащения
 * `MONGO_CONNECTION_STRING`: строка подключения к MongoDB
 * `MONGO_DATABASE`: название базы данных в MongoDB
 * `MONGO_COLLECTION`: название коллекции с данными обогащения
 * `ENRICHMENT_ID`: id сервиса-обогатителя
-* `UPDATE_INTERVAL_SEC`: интервал чтения правил фильтрации из базы данных
+* `UPDATE_INTERVAL_SEC`: интервал чтения правил обогащения из базы данных
 
 
 ## _**Management**_
@@ -162,6 +162,6 @@
 _(URL по умолчанию: /actuator/metrics)_
 
 **Configuration**:
-* `DB_URL`: JDBC-URL базы данных с правилами фильтрации
+* `DB_URL`: JDBC-URL базы данных с правилами
 * `DB_USER`: имя пользователя базы данных
 * `DB_PASSWORD`: пароль базы данных
