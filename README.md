@@ -10,7 +10,7 @@
     <h2> Scheme </h2>
 </div>
 
->> todo: scheme picture << 
+![data bus scheme](https://github.com/Efler/microservice-data-bus/assets/91763935/94d020e0-6c96-450d-bff5-d247185cd93a)
 
 ---
 
